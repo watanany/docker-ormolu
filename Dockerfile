@@ -1,6 +1,6 @@
 FROM nixos/nix
 
-WORKDIR /app 
+ENV LANG=C.UTF-8
 
 RUN nix-channel --add https://nixos.org/channels/nixpkgs-unstable nixpkgs && \
         nix-channel --update && \
